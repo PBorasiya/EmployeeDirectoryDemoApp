@@ -23,7 +23,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Override
 	public List<Employee> findAll() {
 		// TODO Auto-generated method stub
-		return employeeRepo.findAll();
+		return employeeRepo.findAllByOrderByLastNameAsc();
 	}
 
 
